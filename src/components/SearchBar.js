@@ -4,7 +4,7 @@ import {
     FormControl,
     Button
 } from 'react-bootstrap';
-const giphy = require('giphy-api-without-credentials')();
+const giphy = require('giphy-api-without-credentials')('5Muqe6HOngq40S9xI6ZQJ7jDfvZUoS5f');
 
 function SearchBar({setGifList}) {
     const [searchText, setSearchText] = useState('');
