@@ -6,7 +6,7 @@ import  {
     Modal,
     Button
 } from 'react-bootstrap';
-const giphy = require('giphy-api-without-credentials')();
+const giphy = require('giphy-api-without-credentials')('5Muqe6HOngq40S9xI6ZQJ7jDfvZUoS5f');
 
 function Home() {
     const [gifList, setGifList] = useState([]);
@@ -17,7 +17,7 @@ function Home() {
     const [favoriteGifs, setFavoriteGifs] = useState({});
     const [modalGif, setModalGif] = useState(undefined);
 
-    const [currentGifIsFavorite, setCurrentGifIsFavorite] = useState(false);
+    const [currentGifIsFavorite, setCurrentGifIsFavorite] = useState(false);    
 
     useEffect(() => {
         giphy.trending((err, res) => {

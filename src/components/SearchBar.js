@@ -19,7 +19,7 @@ function SearchBar({setGifList}) {
             <InputGroup.Append>
                 <Button variant="outline-secondary"
                     onClick={() => {
-                        alert(searchText);
+                        // alert(searchText);
                         giphy.search(searchText, (err, res) => {
                             console.log(res);
                             setGifList(res.data);
